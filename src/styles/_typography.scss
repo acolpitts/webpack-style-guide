@@ -12,17 +12,18 @@
   font-style: normal;
 }
 
-$font-primary: 'Roboto', sans-serif;
-$font-secondary: 'Jost', sans-serif;
+$font-family-base: 'Roboto', sans-serif;
+$font-family-secondary: 'Jost', sans-serif;
 
-$font-size: 16px;
+$font-size-base: 1rem;
+$line-height-base: 1.25;
+
 $font-color: #333333;
 
 h1 {
-  font-size: 2rem;
-  font-family: $font-secondary;
+  font-family: $font-family-secondary;
 }
 
-.title {
-  margin: 1rem 0;
+h6 {
+  text-transform: uppercase;
 }
