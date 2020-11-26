@@ -1,26 +1,6 @@
-@import "reset";
+// Design System
 @import "typography";
+@import "variables";
 
-html {
-  font-size: $font-size;
-}
-
-body {
-  margin: 0;
-  font-family: $font-primary;
-  color: $font-color;
-}
-
-.flex {
-  display: flex;
-}
-
-.col {
-  flex-direction: column;
-}
-
-.container {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: .5rem;
-}
+// Bootstrap
+@import "bootstrap"
