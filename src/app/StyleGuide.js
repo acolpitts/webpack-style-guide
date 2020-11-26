@@ -2,8 +2,8 @@ import NavBar from "../components/navbar/NavBar";
 
 // Create a class property without a constructor
 class StyleGuide {
-  title = "Webpack Design System";
-  base = "Bootstrap 4, Sass, and PostCSS";
+  title = "Frontend Design System";
+  base = "JavaScript, Sass, and PostCSS";
   render(root) {
     // Create a NavBar component
     const nav = new NavBar();
@@ -11,7 +11,7 @@ class StyleGuide {
     // Create heading node
     const heading = document.createElement("h1");
     heading.textContent = this.title;
-    heading.classList.add("red");
+    heading.className = "title"
 
     // Create paragraph node
     const p = document.createElement("p");
@@ -19,8 +19,9 @@ class StyleGuide {
 
     // Create a flexbox container
     const main = document.createElement("main");
-    main.className = "flex col container"
+    main.className = "flex container col"
 
+    // Add content to main container
     main.append(heading, p)
 
     // Append nodes to the DOM

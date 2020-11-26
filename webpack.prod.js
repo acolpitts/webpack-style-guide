@@ -24,7 +24,7 @@ module.exports = merge(common, {
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin(),
       new HtmlWebpackPlugin({
-        title: 'Webpack Design System',
+        title: 'Frontend Design System',
         template: './src/template.html',
         minify: {
           removeAttributeQuotes: true,

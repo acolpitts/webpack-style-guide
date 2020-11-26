@@ -19,10 +19,10 @@ $font-size: 16px;
 $font-color: #333333;
 
 h1 {
-  margin-bottom: 0;
+  font-size: 2rem;
   font-family: $font-secondary;
 }
 
-p {
-  margin: 0;
+.title {
+  margin: 1rem 0;
 }

@@ -14,9 +14,9 @@ module.exports = merge(common, {
     contentBase: path.resolve(__dirname, './dist'),
     open: true,
     compress: true,
-    hot: true,
-    port: 8080,
-    publicPath: '/'
+    hot: false,
+    port: 8000,
+    publicPath: "/"
   },
   output: {
     path: path.resolve(__dirname, "./dist"),
@@ -24,7 +24,7 @@ module.exports = merge(common, {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Webpack Design System',
+      title: 'Frontend Design System',
       template: path.resolve(__dirname, './src/template.html'), // template file
       filename: 'index.html', // output file
     }),

@@ -13,7 +13,7 @@ const template = `
         <li class="active">Atoms</li>
         <li>Molecules</li>
         <li>Organsims</li>
-        <li>Template</li>
+        <li>Templates</li>
         <li>Pages</li>
       </ul>
     </section>

@@ -6,7 +6,8 @@ const package = require('./package.json')
 
 module.exports = {
   entry: {
-    main: path.resolve(__dirname, package.main)
+    main: path.resolve(__dirname, package.main),
+    vendor: path.resolve(__dirname, './src/vendor.js'),
   },
   output: {
     path: path.resolve(__dirname, "./dist"),

@@ -1,4 +1,4 @@
-// Import Example App
+// Import Style Guide
 import StyleGuide from './app/StyleGuide';
 // Import Design System
 import './styles/main.scss';
