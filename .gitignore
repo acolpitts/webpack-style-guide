@@ -2,3 +2,5 @@
 node_modules
 # Production files
 dist
+# Misc
+.DS_Store
