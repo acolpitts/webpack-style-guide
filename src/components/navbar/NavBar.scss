@@ -1,0 +1,21 @@
+.navbar {
+  background-color: slategray;
+
+  section {
+    align-items: center;
+  }
+  
+  ul {
+    padding-left: 0;
+    display: flex;
+    list-style: none;
+  }
+
+  li {
+    margin-left: 1rem;
+  }
+
+  & .active {
+    color: #fff;
+  }
+}

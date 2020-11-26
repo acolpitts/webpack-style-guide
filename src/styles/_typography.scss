@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'Jost';
+  src: url('../assets/fonts/Jost-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Jost', sans-serif;
+
+$font-size: 16px;
+$font-color: #333333;
+
+h1 {
+  margin-bottom: 0;
+  font-family: $font-secondary;
+}
+
+p {
+  margin: 0;
+}
