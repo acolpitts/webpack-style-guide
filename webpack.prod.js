@@ -1,6 +1,8 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin')
+const TerserPlugin = require('terser-webpack-plugin')
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const { merge } = require("webpack-merge");
 
@@ -17,12 +19,22 @@ module.exports = merge(common, {
     filename: `[name].bundle.v${package.version}.js`,
     publicPath: "/",
   },
+  optimization: {
+    minimizer: [
+      new OptimizeCssAssetsPlugin(),
+      new TerserPlugin(),
+      new HtmlWebpackPlugin({
+        title: 'Webpack Design System',
+        template: './src/template.html',
+        minify: {
+          removeAttributeQuotes: true,
+          collapseWhitespace: true,
+          removeComments: true
+        }
+      })
+    ]
+  },
   plugins: [
-    new HtmlWebpackPlugin({
-      title: 'Webpack Design System',
-      template: path.resolve(__dirname, './src/template.html'), // template file
-      filename: 'index.html', // output file
-    }),
     new MiniCssExtractPlugin({
       filename: `[name].styles.v${package.version}.css`,
     }),
